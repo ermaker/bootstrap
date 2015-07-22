@@ -12,5 +12,5 @@ sudo berks vendor $COOKBOOKS_DIR
 rm -f $BERKSFILE
 sudo rm -f ${BERKSFILE}.lock
 sudo rm -rf ~/.berkshelf
-sudo chef-solo -j <(echo '{"run_list":["recipe[git]"]}')
+sudo bash -c "chef-solo -j <(echo '{\"run_list\":[\"recipe[git]\"]}')"
 sudo rm -rf $COOKBOOKS_DIR
