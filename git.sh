@@ -5,7 +5,7 @@
 BERKSFILE=Berksfile
 cat <<-EOS > $BERKSFILE
 source "https://supermarket.chef.io"
-cookbook "git", "4.2.2"
+cookbook "git"
 EOS
 COOKBOOKS_DIR=/var/chef/cookbooks
 sudo berks vendor $COOKBOOKS_DIR
